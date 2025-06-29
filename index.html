@@ -1,24 +1,287 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión 16 : El Arte del Playtesting y la UX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 16 : El Arte del Playtesting y la UX</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Aprender a realizar 'playtesting' y dar feedback constructivo.</li>
+                                        <li>Comprender conceptualmente el Análisis de Sentimiento como técnica de IA para procesar feedback a gran escala.</li>
+                                        <li>Practicar la empatía en el diseño, evaluando la experiencia de usuario (UX) de otro equipo.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Contextualización del cambio de rol de creador a crítico.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Introducción al playtesting como fase no negociable.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Adquisición conceptual sobre el Análisis de Sentimiento y el A/B Testing.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución de una sesión de playtesting y redacción de feedback estructurado.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Retroalimentación estructurada sobre el feedback recibido.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un párrafo de feedback constructivo por equipo, redactado con la estructura 'Me gustó, Me confundió, Sugeriría', y analizado por Xolo para determinar su polaridad.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Proyectos funcionales de escape room de la Misión 13.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurar que Xolo está programado para realizar un "Análisis de Sentimiento" simulado.</li>
+                                                <li>Verificar que los proyectos de los equipos son intercambiables y funcionales.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Entender el formato de feedback "Me gustó, Me confundió, Sugeriría" para guiar a los estudiantes en su redacción. Prepararse para moderar el intercambio de críticas constructivas.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
+                <p>Establecer un ambiente de trabajo colaborativo y presentar el cambio de rol de creador a jugador y crítico.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la misión: el arte del playtesting.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Diseñadores. Han creado, construido y programado. Pero hay una pregunta que no pueden responder solos: ¿es divertido? ¿Es intuitivo? Hoy, cambiarán de rol. Dejarán de ser creadores para convertirse en jugadores y críticos. Bienvenidos al arte del playtesting, el proceso que transforma un producto funcional en una gran experiencia."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
+                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Activen su sesión de trabajo para la Misión 16, utilizando el protocolo estándar en el chat con Xolo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar el playtesting y el feedback constructivo como habilidades profesionales.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío del Día ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el playtesting como una fase no negociable en la industria.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Un diseñador no puede evaluar objetivamente su propia obra; está demasiado cerca de ella. Por eso, el playtesting es una fase no negociable en la industria. Hoy intercambiarán sus proyectos de escape room con otro equipo. Su misión es doble: jugar la experiencia del otro y dar un feedback claro, honesto y, sobre todo, constructivo. Aprender a dar y recibir críticas es una habilidad profesional fundamental."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar esta sesión, podrán afirmar con confianza: <strong>'Yo puedo realizar una sesión de playtesting, dar feedback constructivo sobre la experiencia de usuario (UX) y puedo explicar cómo el Análisis de Sentimiento con IA ayuda a procesar este feedback a gran escala.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 10 minutos</h2>
+                <p>Guiar a los estudiantes para que comprendan la tecnología de Análisis de Sentimiento y su aplicación en la industria.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 5 y 6) El facilitador instruye a los estudiantes sobre cómo iniciar su diálogo de aprendizaje con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. Para entender cómo la industria procesa miles de opiniones, necesitan conocer la tecnología. Pregúntenle a Xolo: <strong>'Xolo, como investigador de UX, explícame qué es el Análisis de Sentimiento y cómo lo usarás para analizar mi feedback hoy.'</strong> Él les explicará el concepto de polaridad, cómo lo aplicará en la práctica y su conexión con técnicas avanzadas como el A/B Testing Automatizado."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
+                <p>Supervisar el workflow completo de playtesting: intercambio, juego, y redacción de feedback estructurado.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Intercambio y Sesión de Playtesting ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los equipos intercambian proyectos y juegan la experiencia del otro, tomando notas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, al Brain Spark. Intercambien sus proyectos con otro equipo. Tienen 8 minutos para jugar la experiencia de sus compañeros con el objetivo de completarla. Mientras juegan, tomen notas de todo lo que les parezca confuso, frustrante o especialmente divertido. Pónganse en el lugar del jugador."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Redacción y Análisis de Feedback ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Los estudiantes usan la estructura provista para redactar su feedback y lo analizan con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Con sus notas, redacten un párrafo de feedback usando la estructura: <strong>'Me gustó...'</strong>, <strong>'Me confundió...'</strong>, <strong>'Sugeriría...'</strong>. Este formato asegura un feedback equilibrado. Una vez redactado, entréguenlo a Xolo para que simule el Análisis de Sentimiento. Analicen con él por qué detectó una polaridad específica."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Moderar la fase de compartir el feedback recibido y reflexionar sobre su utilidad.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador guía una breve reflexión sobre la experiencia de recibir críticas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Tiempo. Ahora, cada equipo va a recibir el feedback del otro. Tómense un minuto para leerlo en silencio. Pregúntense: ¿Me sorprende este feedback? ¿Es útil? ¿Cuál es el cambio más importante que podría hacer basándome en esta nueva perspectiva?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Intercambio en Parejas) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) En parejas, los estudiantes discuten el feedback recibido.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"En parejas (pueden ser sus compañeros de equipo). Discutan el feedback que recibieron. Compartan sus reacciones: ¿están de acuerdo? ¿les da una nueva idea? El objetivo es procesar la crítica constructivamente. Luego intercambian."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
+                            <p>El facilitador provee una estructura para que el feedback sobre el feedback sea efectivo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para el feedback sobre el feedback: <strong>1. 'La parte más útil del feedback que recibí fue...' 2. 'Una pregunta que le haría a mi playtester es...' 3. 'Gracias al feedback, ahora considero cambiar...'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) El facilitador concluye la sesión, cerrando el bucle del diseño.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy han cerrado el bucle del diseño. Han entendido que un producto no existe en el vacío, sino en la experiencia del usuario. Han aprendido a usar el lenguaje para construir, no para destruir, y han visto cómo la IA puede analizar ese lenguaje. Con esto, damos por concluido el Módulo 3. Se acercan a su proyecto final. Prepárense para la dirección creativa."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
